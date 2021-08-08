@@ -65,6 +65,9 @@
                 })
                 .then(() => {
                   window.location.assign("/profile");
+                })
+                .catch((error) => {
+                    console.error("Login Failure")
                 });
               return false;
             });
